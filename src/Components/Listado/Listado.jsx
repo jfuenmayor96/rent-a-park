@@ -67,7 +67,9 @@ function Listado(props) {
                   <Button
                     color="primary"
                     onClick={() => {
-                      props.history.push(`/publicacion/${publicacion.id}`);
+                      props.history.push(
+                        `/detalle-publicacion/${publicacion.id}`
+                      );
                     }}
                   >
                     Visitar
