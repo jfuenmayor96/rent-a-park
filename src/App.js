@@ -12,6 +12,7 @@ function App() {
         <Route path="/detalle-publicacion/:id" component={DetallePublicacion} />
         <Route path="/listado" component={Listado} />
         <Route path="/home" component={Home} />
+        <Route component={Home} />
       </Switch>
     </Router>
   );
