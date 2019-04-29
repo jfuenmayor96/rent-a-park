@@ -1,0 +1,22 @@
+div.contenedor-listado {
+  height: 100vh;
+
+  h1{
+    margin: 30px 0px;
+    font-weight: bold;
+    color: #3f3d56;
+  }
+
+}
+
+.contenedor-publicacion {
+  display: inline-block !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px){
+  div.contenedor-listado {
+    height: 100%;
+  }
+}
