@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Home.scss";
 import { Container, Row, Col, Button, Jumbotron } from "reactstrap";
 import car_image from "./../../assets/img/undraw_fast_car_p4cu.svg";
+import ModalPublicacion from "./ModalPublicacion";
+import ModalBusqueda from "./ModalBusqueda";
 
 export default function Home() {
   const [mostrar_modal_publicacion, mostrarModalPublicacion] = useState(false);
@@ -32,18 +34,38 @@ export default function Home() {
 
         <Row className="botones">
           <Col xs={12} sm={12} md={6} lg={6} className="text-center">
-            <Button lg="lg" color="primary" className="boton-publicar">
+            <Button
+              lg="lg"
+              color="primary"
+              className="boton-publicar"
+              onClick={() => mostrarModalPublicacion(true)}
+            >
               <h3>Tengo un puesto</h3>
             </Button>
           </Col>
 
           <Col xs={12} sm={12} md={6} lg={6} className="text-center">
-            <Button lg="lg" color="success" className="boton-buscar">
+            <Button
+              lg="lg"
+              color="success"
+              className="boton-buscar"
+              onClick={() => mostrarModalBusqueda(true)}
+            >
               <h3>Necesito un puesto</h3>
             </Button>
           </Col>
         </Row>
       </Jumbotron>
+
+      <ModalPublicacion
+        isOpen={mostrar_modal_publicacion}
+        toggleModal={() => mostrarModalPublicacion(false)}
+      />
+
+      <ModalBusqueda
+        isOpen={mostrar_modal_busqueda}
+        toggleModal={() => mostrarModalBusqueda(false)}
+      />
     </Container>
   );
 }
