@@ -1,0 +1,44 @@
+div.contenedor-home {
+
+  background-image: url("./../../assets/img/omer-rana-533347-unsplash.jpg");
+  background-size: cover;
+
+  .jumbotron{
+    height: 100vh;
+    margin: 0px;
+    background-color: rgba(222, 222, 222, 0.8);
+
+    h1, h2{
+      color: #3f3d56;
+      font-weight: bolder;
+    }
+  }
+}
+
+img.imagen1-home{
+  height: 200px;
+}
+
+div.botones {
+  button{
+    margin: 30px 0px;    
+  }
+
+  button.boton-publicar {
+    background-color: #3f3d56 !important;
+    border-color: white;
+  }
+
+  button.boton-publicar:hover {
+    background-color: #312e43 !important;
+  }
+
+  button.boton-buscar {
+    background-color: #cc4f39 !important;
+    border-color: white;
+  }
+
+  button.boton-buscar:hover {
+    background-color: #ff6347 !important;
+  }
+}
