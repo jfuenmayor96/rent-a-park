@@ -39,3 +39,12 @@ div.botones {
     background-color: #ff6347 !important;
   }
 }
+
+@media screen and (max-width: 920px){
+  div.contenedor-home {
+
+    .jumbotron{
+      height: 100%;
+    }
+  }
+}
