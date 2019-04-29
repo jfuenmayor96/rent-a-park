@@ -1,0 +1,21 @@
+div.contenedor-home {
+  background-image: url("./assets/img/omer-rana-533347-unsplash.jpg");
+  background-size: cover;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: rgba(222, 222, 222, 0.8);
+
+}

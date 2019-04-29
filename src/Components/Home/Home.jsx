@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.scss";
 import { Container, Row, Col, Button, Jumbotron } from "reactstrap";
 import car_image from "./../../assets/img/undraw_fast_car_p4cu.svg";
 
 export default function Home() {
+  const [mostrar_modal_publicacion, mostrarModalPublicacion] = useState(false);
+  const [mostrar_modal_busqueda, mostrarModalBusqueda] = useState(false);
+
   return (
     <Container fluid className="contenedor-home">
       <Jumbotron fluid>
