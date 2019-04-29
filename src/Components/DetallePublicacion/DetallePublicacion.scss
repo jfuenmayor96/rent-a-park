@@ -1,0 +1,38 @@
+.contenedor-detalle-publicacion{
+    height: 100vh;
+    h1{
+      margin: 30px 0px;
+      font-weight: bold;
+      color: #3f3d56;
+    }  
+    div.card, li.list-group-item{
+      font-size: 20px;
+      border-color: blue;
+    }  
+    a.rate-card,p.rate-card{
+      font-size: 16px;
+    }
+
+}
+
+img.icono{
+    width:36px;
+    height:36px;
+    margin-right: 10px;
+}
+img.mapa{
+    width:45px;
+    height:45px;
+    margin-left: 20px;
+    border: 1px solid blue;
+}
+
+img.rate{
+    width: 200px;
+    height: 50px;
+}
+button.boton-contactar{
+    font-weight: bold;
+    margin: 10px;
+    background-color: white;
+}
